@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://vanilla-js-basic-project-3-reviews.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="./Starter_files/all.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./Starter_files/styles.css">
+  <style type="text/css">li.svelte-10ibojx.svelte-10ibojx{padding:2px 7px;list-style-type:none;display:flex;justify-content:space-between;border-bottom:1px solid rgba(0, 0, 0, 0.1)}li.svelte-10ibojx a.svelte-10ibojx{word-break:break-word;color:#3b3737;font-size:14px}.volume.svelte-10ibojx.svelte-10ibojx{margin-left:5px;word-break:normal;color:#3b3737;font-size:14px}</style><style type="text/css">#fk-app.svelte-1dnzmeo .initial-keywords-container.svelte-1dnzmeo{width:250px}#fk-app.svelte-1dnzmeo #no-results.svelte-1dnzmeo{text-align:center;margin:10px;font-size:1.2rem;color:orange}#fk-app.svelte-1dnzmeo.svelte-1dnzmeo{position:absolute;top:0;left:0;width:100%;z-index:99999;display:flex;align-content:center;justify-content:center}#fk-app.svelte-1dnzmeo #app-container.svelte-1dnzmeo{background-color:inherit;padding-bottom:10px;min-height:450px}#fk-app.svelte-1dnzmeo #app-container.no-result.svelte-1dnzmeo{min-height:0px !important;padding-bottom:0px}#fk-app.svelte-1dnzmeo #searchResults.svelte-1dnzmeo{display:flex;justify-content:center;background-color:#fdfdfd;padding-bottom:20px}#fk-app.svelte-1dnzmeo #searchResults.dark.svelte-1dnzmeo{background-color:#202124}#fk-app.svelte-1dnzmeo .no-result #searchResults.svelte-1dnzmeo{padding-bottom:0px !important;border:1px solid gray;border-radius:5px;box-shadow:0 0 10px 0px grey}#fk-app.svelte-1dnzmeo #searchResultContainer.svelte-1dnzmeo{display:flex;gap:5px;justify-content:center;flex-wrap:wrap}#fk-app.svelte-1dnzmeo .keywords-container.svelte-1dnzmeo{border:1px dashed gray;width:250px;border-radius:5px;word-break:break-all;word-wrap:break-word;transition:all 0.2s ease-in-out}#fk-app.svelte-1dnzmeo #actions-wrapper.svelte-1dnzmeo{display:flex;flex-direction:column}#fk-app.svelte-1dnzmeo #actions-wrapper button.svelte-1dnzmeo{cursor:pointer;padding:2px 4px;margin:10px;transition:all 0.2s ease-in-out;text-align:center;font-size:0.9rem;border:none;border-radius:3px;padding:2px 6px;border:1px solid gray;background-color:#ededed}#fk-app.svelte-1dnzmeo button#close.svelte-1dnzmeo,#fk-app.svelte-1dnzmeo button#copy.svelte-1dnzmeo,#fk-app.svelte-1dnzmeo button#export.svelte-1dnzmeo{background:#1972e6;color:#ffffff}#fk-app.svelte-1dnzmeo button#close.svelte-1dnzmeo:hover,#fk-app.svelte-1dnzmeo button#copy.svelte-1dnzmeo:hover,#fk-app.svelte-1dnzmeo button#export.svelte-1dnzmeo:hover{background-color:#126db5}#loader.svelte-1dnzmeo.svelte-1dnzmeo{min-width:400px;text-align:center;padding:10px 0px}#loader.svelte-1dnzmeo img.svelte-1dnzmeo{width:50px;height:50px}</style><style type="text/css">#search-keyword-button {
+  width: 50px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  background-color: #ededed;
+  margin-top: 8px;
+  box-shadow: inset 0px 0 0px 1px rgb(64 60 67 / 24%);
+  display: inline-block;
+  vertical-align: middle;
+}
+</style><style type="text/css">#search-input {
+  display: flex;
+}
+
+#fk-app.youtube .keyword-item a {
+  font-size: 1.3rem !important;
+}
+</style><style type="text/css">.nav-fill.bg-fix {
+  background-color: #ffffff;
+}
+
+#fk-app.amazon #searchResults {
+  background-color: #5e5f5f !important;
+}
+</style><style type="text/css">#fk-search-input-outer-wrapper {
+  margin-top: 0px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  position: relative;
+  padding-right: 35px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  height: 48px;
+  color: #222222;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: border 200ms ease-out, color 200ms ease-out;
+  border-left: 0;
+  border-right: 0;
+  border-width: 2px;
+  border-color: #222222;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+</style><style type="text/css">form#gh-f td.gh-td-s {
+  position: relative;
+}
+#search-keyword-button.ebay {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1102.0" data-gr-ext-installed="">
+    <main>
+      <section class="container">
+        <!-- title -->
+        <div class="title">
+          <h2>our reviews</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img src="./Starter_files/person-1_rfzshl.jpg" id="person-img" alt="">
+          </div>
+          <h4 id="author">susan smith</h4>
+          <p id="job">web developer</p>
+          <p id="info">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry</p>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn">surprise me</button>
+        </article>
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="./Starter_files/app.js.téléchargement"></script>
+  
+
+<div id="torrent-scanner-popup" style="display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
