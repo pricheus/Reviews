@@ -34,55 +34,55 @@ const reviews = [
 ];
 
 //Interactive elements
+const authorFace = document.getElementById('authorFace');
+const authorName = document.getElementById('authorName');
+const authorRole = document.getElementById('authorRole');
+const authorDescription = document.getElementById('authorDescription');
 
-const buttonSurprise = document.getElementsByClassName('buttonSurpriseME')[0];
-const buttonPrev = document.getElementsByClassName('buttonPrev')[0];
-const buttonNext = document.getElementsByClassName('buttonNext')[0];
+const prevButton = document.getElementById('buttonLeft');
+const nextButton = document.getElementById('buttonRight');
+const surpriseMe = document.getElementById('supriseME');
 
-const image = document.getElementById('authorFace');
-const author = document.getElementById('author');
-const role= document.getElementById('authorRole');
-const resume =  document.getElementById('authorResume');
+//eventListeners
+window.addEventListener('DOMContentLoaded', function(){
+    authorFace.src = reviews[0].img;
+    authorName.textContent = reviews[0].name;
+    authorRole.textContent = reviews[0].job;
+    authorDescription.textContent = reviews[0].text
+});
 
-let arg = 0;
-const item = reviews[arg];
-//object targets
-    function changeState(arg){
-    const item = reviews[arg]
-    image.src = item.img;
-    author.textContent =item.name ;
-    role.textContent = item.job;
-    resume.textContent = item.text;
-    };
+let  value = 0;
+function changePerson(){
+    authorFace.src = reviews[value].img;
+    authorName.textContent = reviews[value].name;
+    authorRole.textContent = reviews[value].job;
+    authorDescription.textContent = reviews[value].text
+};
 
-
-    window.addEventListener('DOMContentLoaded', function(){
-    
-        image.src = item.img;
-        author.textContent =item.name ;
-        role.textContent = item.job;
-        resume.textContent = item.text;
-    });
-
-    buttonNext.addEventListener('click', function(){
-        arg++;
-        if( arg > reviews.length - 1){
-            arg = 0
-        };
-        changeState(arg)
-    });
-
-    buttonPrev.addEventListener('click', function(){
-        arg--;
-        if( arg < 0){
-            arg = reviews.length - 1
-        };
-        changeState(arg)
-    });
-
-    buttonSurprise.addEventListener('click', function(){
-        const randomNumber = Math.floor(Math.random() * reviews.length);
-        changeState(randomNumber);
-    });
+function randomNumber (){
+    return Math.floor(Math.random() * reviews.length)
+} ;
 
 
+prevButton.onclick = function(){
+    value--;
+    if(value < 0){
+        value = reviews.length - 1;
+    }
+    changePerson();
+};
+
+nextButton.onclick = function(){
+    value++;
+    if(value > reviews.length - 1){
+        value = 0;
+    }
+    changePerson();
+};
+
+surpriseMe.onclick = function(){
+    authorFace.src = reviews[randomNumber()].img;
+    authorName.textContent = reviews[randomNumber()].name;
+    authorRole.textContent = reviews[randomNumber()].job;
+    authorDescription.textContent = reviews[randomNumber()].text
+}

@@ -1,13 +1,14 @@
 *{
     box-sizing: content-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body{
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
     background-color: hsl(210, 36%, 96%);
     color: #222;
-    font-size: 1.25rem;
 }
 
 main{
@@ -16,81 +17,119 @@ main{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20% 0;
-    width: 100%;
+    height: 100vh;
 }
 
-section{
+#title{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    bottom: 7ch;
 }
 
 h1{
-    text-transform: capitalize;
-    font-size: 32px;
+    letter-spacing: 0.25ch;
 }
 
-#border{
-    position: relative;
-    top: 1ch;
-    background-color: #49a6e9;
-    width: 80px;
-    height: 4px;
-    
+#blueBorder{
+    display: block;
+    width: 10.5ch;
+    height: 0.5ch;
+    background-color:#49A6E9;
+    margin-top: 1.5ch;
 }
 
-#whiteBox{
-    width: auto;
-    height:auto;
-    background-color: #fff;
-    border-radius: 9px;
-
-}
 
 img{
-    width: 150px;
-    height: 150px;
-    background-color:#49a6e9 ;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 2ch;
-    
+width: 15ch;
+height: 15ch;
+background-color: #49A6E9;
+border-radius: 50%;
+padding:0.75ch 0.75ch  0 0 ;
+object-fit: cover;
+
 }
 
-h4{
+#subContainer{
+    background-color: #fff;
+    color: #222;
+    width: 80%;
+    height: 55%;
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 6ch;
+}
+
+#authorName{
     text-transform: capitalize;
-    margin: 1ch 0;
+    letter-spacing: 0.45ch;
+    padding: 1.5ch;
 }
 
-#role{
+#authorRole{
     text-transform: uppercase;
-    color: #49a6e9;
-    margin: 1ch 0;
+    color: #49A6E9;
+    letter-spacing: 0.25ch;
+    padding: 0;
+
 }
 
-p{
-    margin: 2ch 0;
-    width: 80ch;
+#authorDescription{
+    color: #617D98;
+    padding: 1.5ch;
+
 }
 
+.material-symbols-outlined{
+   
+    cursor: pointer;
+}
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+  }
 
-.surpriseME{
-    width: 91.86px;
+button{
+    color: #49A6E9;
+    background-color: #ebf7ff;
+    font: 0.95rem Arial ;
+    width: 92px;
     height: 27px;
     border-radius: 9px;
-    color: #49a6e9;
-    background-color: #ebf7ff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 2ch 0;
-    text-transform: capitalize;
+    border: #49A6E9 2px solid;
+    cursor: pointer;
+
 }
 
 button:hover{
-    background-color: #49a6e9;
+    background-color: #49A6E9;
     color: #222;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+#prev_next{
+    margin: 1ch 3ch;
+}
+
+#buttonRight{
+width: auto;
+height: auto;
+border: none;
+
+}
+
+#buttonLeft{
+    width: auto;
+    height: auto;
+    border: none;
 }

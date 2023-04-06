@@ -8,26 +8,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Reviews</title>
+    <title>Reviews</title>
 </head>
 <body>
 
-    <main>
-        <section id="title">
-            <h1>our reviews</h1>
-            <span id="border"></span>
-        </section>
+    <main id="container">
+        <div id="title">
+            <h1>Our Reviews</h1>
+            <span id="blueBorder"></span>
+        </div>
 
-        <div id="whiteBox">
+        <div id="subContainer">
             <img id="authorFace" src="" alt="">
-            <h4 id="author">susan smith</h4>
-            <span id="authorRole">web developper</span>
-            <p id="authorResume">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse <br>
-                 before they sold out chambray pop-up. Shaman humblebrag pickled <br>
+            <h4 id="authorName">susan smith</h4>  
+            <h4 id="authorRole">web developer</h4>
+            <p id="authorDescription">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse <br>
+                    before they sold out chambray pop-up. Shaman humblebrag pickled <br>
                  coloring book salvia hoodie, cold-pressed four dollar toast everyday carry</p>
-                <button class="buttonPrev"><span class="material-symbols-outlined">chevron_left</span></button> <button class="buttonNext"><span class="material-symbols-outlined">chevron_right</span></button> 
-                <br>
-            <button class="buttonSurpriseME">surprise me</button>
+            <section id="prev_next">
+             <button id="buttonLeft"><span id="buttonLeft" class="material-symbols-outlined">
+                    chevron_left
+                    </span></button>   
+              <button id="buttonRight"><span id="buttonRight" class="material-symbols-outlined">
+                        chevron_right
+                        </span></button>        
+            </section>
+
+            <button id="supriseME">Surprise Me</button>  
         </div>
     </main>
    
