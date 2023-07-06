@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="review.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="review.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reviews</title>
-</head>
-<body>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Our Reviews</h1>
+        <span class="underline"></span>
+      </div>
 
-   <main>
-        <div class="title">
-            <h1>Our Reviews</h1>
-            <span class="underline"></span>
-        </div>
+      <div class="container">
+        <img class="authorFace" src="" alt="" />
+        <h4 class="authorName">
+          <!--content render by javascript-->
+        </h4>
+        <h4 class="authorRole">
+          <!--content render by javascript-->
+        </h4>
+        <p class="authorResume">
+          <!--content render by javascript-->
+        </p>
 
-        <div class="container">
-            <img class="authorFace" src="" alt="">
-            <h4 class="authorName">Susan Smith</h4>
-            <h4 class="authorRole">WEB DEVELOPER</h4>
-            <p class="authorResume">
-                I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse <br>
-                 before they sold out chambray pop-up. Shaman humblebrag pickled <br>
-                 coloring book salvia hoodie, cold-pressed four dollar toast everyday carry
-            </p>
+        <section class="btnsContainer">
+          <button
+            id="prev"
+            class="btnArrow material-symbols-outlined prev"
+            type="button"
+          >
+            arrow_back_ios
+          </button>
+          <button
+            id="foward"
+            class="btnArrow material-symbols-outlined next"
+            type="button"
+          >
+            arrow_forward_ios
+          </button>
+        </section>
+        <button class="btn_randomChoice">SurpriseMe</button>
+      </div>
+    </main>
 
-            <section class="btnsContainer">
-                <button id="prev" class="btnArrow material-symbols-outlined" type="button">arrow_back_ios</button>
-                <button id="foward"  class="btnArrow material-symbols-outlined" type="button">arrow_forward_ios</button>   
-            </section>
-            <button class="btn_randomChoice">SurpriseMe</button>
-        </div>
-   </main>
-   
     <script src="review.js"></script>
-</body>
-</html>  
+  </body>
+</html>

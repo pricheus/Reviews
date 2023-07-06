@@ -1,110 +1,107 @@
-*{
-    box-sizing: content-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-size: 1.25rem;
-    font-family: 'Open Sans', sans-serif;
-    background-color: hsl(210, 36%, 96%);
-    color: #222;
+body {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(210, 36%, 96%);
+  color: #222;
 }
 
 /*title*/
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8ch;
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8ch;
 }
 
-h1{
-letter-spacing: 0.25ch;
+h1 {
+  letter-spacing: 0.25ch;
 }
 
-.underline{
-display: flex;
-width: 80%;
-height: 0.5ch;
-width: 30%;
-background-color: hsl(205, 78%, 60%);
-margin: 0.75ch;
+.underline {
+  display: flex;
+  width: 80%;
+  height: 0.5ch;
+  width: 30%;
+  background-color: hsl(205, 78%, 60%);
+  margin: 0.75ch;
 }
-
-
-
 
 /*conatiner*/
-.container{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 60vh;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 
-background-color: #fff;
-border-radius: 7px;
-padding: 0 3ch;
-letter-spacing: 0.12ch;
-margin-top: 4ch;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 0 3ch;
+  letter-spacing: 0.12ch;
+  margin-top: 4ch;
 }
 
-img{
-    width: 15ch;
-    height: 15ch;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: hsl(205, 89%, 70%);
-    padding-top: 0.75ch;
-    padding-right: 0.75ch;
+img {
+  width: 15ch;
+  height: 15ch;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: hsl(205, 89%, 70%);
+  padding-top: 0.75ch;
+  padding-right: 0.75ch;
 }
 
-.authorName{
-    text-transform: capitalize;
-    margin: 0.75ch 0;
+.authorName {
+  text-transform: capitalize;
+  margin: 0.75ch 0;
 }
 
-.authorRole{
-    text-transform: uppercase;
-    color: hsl(205, 89%, 70%);
-    letter-spacing: 0.5ch;
-    margin: 0.75ch 0;
+.authorRole {
+  text-transform: uppercase;
+  color: hsl(205, 89%, 70%);
+  letter-spacing: 0.5ch;
+  margin: 0.75ch 0;
 }
 
-.authorResume{
-    margin: 1.5ch 0;
+.authorResume {
+  margin: 1.5ch 0;
+  text-align: center;
 }
 
-.btnArrow{
-cursor: pointer;
-background-color: inherit;
-border: none;
-color: hsl(205, 89%, 70%);
-margin: 0.75ch 0;
+.btnArrow {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  color: hsl(205, 89%, 70%);
+  margin: 0.75ch 0;
 }
 
-.btn_randomChoice{
-    background-color: inherit;
-    font: large arial;
-    border-radius: 6px;
-    border-top: 2px solid hsl(205, 89%, 70%);
-    border-left: 2px solid hsl(205, 89%, 70%);
-    color: hsl(205, 63%, 48%);
-    cursor: pointer;
-    width: 10ch;
+.btn_randomChoice {
+  background-color: inherit;
+  font: large arial;
+  border-radius: 6px;
+  border-top: 2px solid hsl(205, 89%, 70%);
+  border-left: 2px solid hsl(205, 89%, 70%);
+  color: hsl(205, 63%, 48%);
+  cursor: pointer;
+  width: 10ch;
 }
 
-.btn_randomChoice:hover{
-    color: #222;
-    background-color: hsl(205, 89%, 70%);
+.btn_randomChoice:hover {
+  color: #222;
+  background-color: hsl(205, 89%, 70%);
 }
